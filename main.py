@@ -1,25 +1,23 @@
-from snake_ladder import SnakeLadder
+from users import Users
 
-def main():
+inputs=[
+    "SHOW",
+    "SHOW u1",
+    "EXPENSE u1 1000 4 u1 u2 u3 u4 EQUAL",
+    "SHOW u4",
+    "SHOW u1",
+    "EXPENSE u1 1250 2 u2 u3 EXACT 370 880",
+    "SHOW",
+    "EXPENSE u4 1200 4 u1 u2 u3 u4 PERCENT 40 20 20 20",
+    "SHOW u1",
+    "SHOW"
+        ]
 
-    snakes_input = [
-        (14, 7),
-        (17, 4),
-        (99, 78),
-    ]
-    ladders_input = [
-        (3, 22),
-        (5, 8),
-        (11, 26),
-    ]
-    players_input = ["RS", "NS", "SHETTY"]
+u1=Users("RS", "rs@rs.com", 8660211111)
+        #  {"id":"u2", "name":"RS2", "email":"rs2@rs.com", "phone_number": 8660211112},
+        #  {"id":"u3", "name":"RS3", "email":"rs3@rs.com", "phone_number": 8660211113},
+        #  {"id":"u4", "name":"RS4", "email":"rs4@rs.com", "phone_number": 8660211114}]
 
-    # Initialize the game
-    game = SnakeLadder(board_size=100, snakes=snakes_input, ladders=ladders_input, players=players_input)
-
-    # Start the game
-    game.play_game()
-    
-
-if __name__ == "__main__":
-    main()
+users=[u1]
+for user in users:
+    print(u1.name,u1.balances,u1.user_dict)
