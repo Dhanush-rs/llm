@@ -6,8 +6,6 @@ class Table:
         self.data = []
         self.columns = []
         
-        
-        
     def add_column(self, column_name, column_type, contraints):
         column = Column(column_name, column_type, contraints)
         self.columns[column_name]=column
@@ -32,5 +30,9 @@ class Table:
         filtered_records = [row for row in self.data if row[column_name] == value]
         return filtered_records
     
+    def update_record(self):
+        pass
     
+    def delete_record(self):
+        pass
         
