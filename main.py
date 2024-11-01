@@ -25,6 +25,8 @@ def main():
     
     ride_service.find_ride("Nandini",(15,6),(20,4))
     
+    ride_service.change_driver_status("Driver1", False)
+    print(ride_service.drivers.get("Driver1").get_is_available())
     # total earnings
     ride_service.find_total_earning()
 

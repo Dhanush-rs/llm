@@ -81,7 +81,7 @@ class RideService:
             
     def change_driver_status(self, name, status):
         driver = self.drivers.get(name)
-        driver.set_is_available==status
+        driver.set_is_available(status)
     
     
     
