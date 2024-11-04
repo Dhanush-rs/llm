@@ -36,6 +36,7 @@ class DocumentService:
             owner = document.get_owner()
             if user == owner:
                 del self.documents[document_name]
+                print(f"document {document_name} deleted succesfully")
             else:
                 print(f"user {user} is not an owner, only owner can delete")
                 
